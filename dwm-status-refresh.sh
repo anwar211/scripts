@@ -157,11 +157,12 @@ export IDENTIFIER="unicode"
 #vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 #vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-xsetroot -name " 💿 $(print_mem) $(dwm_alsa) $(print_date)  [$(dwm_battery)]"
-
+xsetroot -name " ☯ $(print_mem) $(dwm_alsa) $(print_date)  [$(dwm_battery)]"
+#💿
+#𖦤 
 # Update old values to perform new calculations
 #old_received_bytes=$received_bytes
 #old_transmitted_bytes=$transmitted_bytes
-old_time=$now
+#old_time=$now
 
 exit 0
