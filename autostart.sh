@@ -12,6 +12,7 @@
 
 nm-applet &
 
+flameshot &
 #xfce4-power-manager &
 #xfce4-volumed-pulse &
 #~/scripts/autostart_wait.sh &

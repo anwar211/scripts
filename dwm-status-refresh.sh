@@ -50,7 +50,7 @@
 
 print_mem(){
 	memfree=$(($(grep -m1 'MemAvailable:' /proc/meminfo | awk '{print $2}') / 1024))
-	echo -e "$memfree"
+	echo -e "MEM $memfree"
 }
 
 #print_temp(){
@@ -157,9 +157,8 @@ export IDENTIFIER="unicode"
 #vel_recv=$(get_velocity $received_bytes $old_received_bytes $now)
 #vel_trans=$(get_velocity $transmitted_bytes $old_transmitted_bytes $now)
 
-xsetroot -name " ☯ $(print_mem) $(dwm_alsa) $(print_date)  [$(dwm_battery)]"
-#💿
-#𖦤 
+xsetroot -name "$(print_mem) $(dwm_alsa) $(print_date) [$(dwm_battery)]"
+
 # Update old values to perform new calculations
 #old_received_bytes=$received_bytes
 #old_transmitted_bytes=$transmitted_bytes
