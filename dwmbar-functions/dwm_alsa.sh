@@ -8,7 +8,7 @@
 
 dwm_alsa () {
     VOL=$(amixer get Master | tail -n1 | sed -r "s/.*\[(.*)%\].*/\1/")
-    printf "%s" "$SEP1"
+    #printf "%s" "$SEP1"
     #if [ "$IDENTIFIER" = "unicode" ]; then
         #if [ "$VOL" -eq 0 ]; then
         #   printf "🔇"
@@ -28,9 +28,9 @@ dwm_alsa () {
         #elif [ "$VOL" -gt 33 ] && [ "$VOL" -le 66 ]; then
         #    printf "VOL %s%%" "$VOL"
         else
-            printf "VOL %s%%" "$VOL"
+            printf "VOL:%s%" "$VOL"
         fi
     #fi
-    printf "%s\n" "$SEP2"
+    #printf "%s\n" "$SEP2"
 }
 
